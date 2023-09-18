@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venda sua moto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Cadastre seu veículo para vender mais rápido!</h3>
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+        <div class="form-body">
+          <h1 class="form-title">Venda fácil sua moto!</h1>
+          <p>
+            Descreva as características e marque os opcionais que ele possui
+          </p>
+          <form>
+            <div class="box-input">
+              <label for="title"
+                >Título do anúncio<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                required
+                name="title"
+                id="title"
+                class="block"
+                placeholder="Um título para anunciar sua moto"
+                minlength="1"
+                maxlength="30"
+              />
+            </div>
+            <div class="box-input">
+              <label for="price"
+                >Preço<span class="required-field">*</span></label
+              >
+              <input
+                type="number"
+                required
+                name="price"
+                id="price"
+                class="block"
+                placeholder="Defina o preço"
+              />
+            </div>
+            <div class="box-input">
+              <label for="description"
+                >Descriçao <span class="required-field">*</span></label
+              >
+              <textarea
+                name="description"
+                id="description"
+                class="block"
+                placeholder="Aqui voce coloca os detalhes do veículo,por exemplo: se ele tem algum arranhão"
+              ></textarea>
+            </div>
+            <div class="box-input">
+              <label for="brand"
+                >Marca<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                required
+                name="brand"
+                id="brand"
+                class="block"
+                placeholder="Digite a marca do veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="model"
+                >Modelo<span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                required
+                name="model"
+                id="model"
+                class="block"
+                placeholder="Digite o modelo do veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="mileage"
+                >Kilometragem<span class="required-field">*</span></label
+              >
+              <input
+                type="number"
+                required
+                name="mileage"
+                id="mileage"
+                class="block"
+                placeholder="Digite a kilometragem do veículo"
+              />
+            </div>
+            <div class="box-input">
+              <label for="purchase-date"
+                >Data de compra<span class="required-field">*</span></label
+              >
+              <input
+                type="date"
+                required
+                name="purchase-date"
+                id="purchase-date"
+                class="block"
+              />
+            </div>
+            <div class="box-input">
+              <p>Tipo de cãmbio:<span class="required-field">*</span></p>
+              <input type="radio" id="manual" name="gear" />
+              <label for="manual">Manual</label>
+              <input type="radio" id="automatico" name="gear" />
+              <label for="automatico">Automático</label>
+            </div>
+            <div class="optional-box">
+              <p>Opcionais</p>
+              <ul class="optional-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="gps"
+                    value="gps"
+                    name="optional[]"
+                  />
+                  <label for="gps">GPS</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="bolsa"
+                    value="bolsa"
+                    name="optional[]"
+                  />
+                  <label for="bolsa">Baú Lateral</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="assento-confortável"
+                    value="assento-confortável"
+                    name="optional[]"
+                  />
+                  <label for="assento-confortável">Assento Confortável</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="manoplas-aquecidas"
+                    value="manoplas-aquecidas"
+                    name="optional[]"
+                  />
+                  <label for="manoplas-aquecidas">Manoplas Aquecidas</label>
+                </li>
+              </ul>
+            </div>
+            <div class="optional-box">
+              <ul class="optional-list">
+                <li>
+                  <input
+                    type="checkbox"
+                    id="protetores-de-motor"
+                    value="protetores-de-motor"
+                    name="optional[]"
+                  />
+                  <label for="protetores-de-motor">Protetores de Motor</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="alarme-de-moto"
+                    value="alarme-de-moto"
+                    name="optional[]"
+                  />
+                  <label for="alarme-de-moto">Alarme de Moto</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="para-brisa-alto"
+                    value="para-brisa-alto"
+                    name="optional[]"
+                  />
+                  <label for="para-brisa-alto">Para-brisa Alto</label>
+                </li>
+                <li>
+                  <input
+                    type="checkbox"
+                    id="sistema-de-escape-personalizado"
+                    value="sistema-de-escape-personalizado"
+                    name="optional[]"
+                  />
+                  <label for="sistema-de-escape-personalizado"
+                    >Sistema de Escape</label
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="box-input">
+              <p>Fotos da moto:<span class="required-field">*</span></p>
+              <input
+                type="file"
+                multiple
+                required
+                accept="image/png, image/jpg"
+                id="images"
+                name="images"
+              />
+            </div>
+            <input type="submit" value="Enviar" class="btn-submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
